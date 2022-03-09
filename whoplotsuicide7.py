@@ -149,28 +149,7 @@ def linechart_callback(selected_continent):
     return line_fig_country,html.Div('Distribution per country: {}'.format(fullname))
 
 
-# def linechart_callback(selected_continent):
-#     #save original dataframe
-    
-#     alldata=df_suicide.copy(deep=True)
-    
-#     if not selected_continent:
-#         continent_filter = 'Eur'
-    
-#     #filter op input_value = ParentLocationCode
-#     if selected_continent:
-#         continent_filter = selected_continent
-#     #filter dataframe
-#     alldata=alldata[alldata["ParentLocationCode"] == continent_filter]
 
-#    #define the line
-#     line_fig_country= px.scatter(alldata, x="Location", y="FactValueNumeric", color="Dim1")
-    
-#     #define label for plotblock, horrible solution.
-#     fullnamedict = list(filter(lambda x:x["ParentLocationCode"] == continent_filter, dict_continent))
-#     fullname=fullnamedict[0]['ParentLocation']
-                           
-#     return line_fig_country,html.Div('Distribution per country: {}'.format(fullname))
 
 
 
